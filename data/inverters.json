@@ -1,26 +1,60 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "0.3",
   "last_schema_review": "2026-09-05",
+  "identity_policy": {
+    "principle": "Brand name, product name, and exact model designation are always retained separately.",
+    "reason": "Pakistan's solar market frequently mixes brand names, product/series names, model numbers, reseller names, and variant names. Records must preserve the exact naming found in each source so similarly named or differently rebranded products are not incorrectly merged.",
+    "rules": [
+      "Never use the model number as a substitute for the brand or product name.",
+      "Never merge two records solely because their product names look identical.",
+      "Never assume two records are the same because they have similar specifications.",
+      "Preserve exact manufacturer/reseller spelling and capitalization in source evidence.",
+      "Store normalized names separately from source names.",
+      "Record every known alias, series name, reseller name, and alternate model designation.",
+      "If the exact model cannot be established, keep the record separate and mark the model as unknown rather than guessing.",
+      "A possible rebrand/OEM match must be represented as a relationship with evidence, not as a replacement of the original identity."
+    ]
+  },
   "records": [
     {
       "id": "itel-ipv-8k48u",
-      "brand": "Itel",
-      "model": "IPV-8K48U",
-      "status": "research",
-      "tier": "UNRATED",
-      "score": null,
-      "confidence": "unknown",
-      "notes": "Initial record. Specifications and OEM relationship must be verified against primary documentation before scoring."
+      "identity": {
+        "brand_name": "Itel",
+        "product_name": "IPV-8K48U",
+        "model_number": "IPV-8K48U",
+        "series_name": null,
+        "variant_name": null,
+        "market_name": null,
+        "source_names": [],
+        "aliases": [],
+        "status": "research"
+      },
+      "tiering": {
+        "tier": "UNRATED",
+        "score": null,
+        "confidence": "unknown"
+      },
+      "notes": "Initial record. Specifications and OEM relationship must be verified against primary documentation."
     },
     {
       "id": "knox-krypton-6-2kw-pv9000",
-      "brand": "Knox",
-      "model": "Krypton 6.2KW PV9000 HYBRID",
-      "status": "research",
-      "tier": "UNRATED",
-      "score": null,
-      "confidence": "unknown",
-      "notes": "Initial record. Specifications and OEM relationship must be verified against primary documentation before scoring."
+      "identity": {
+        "brand_name": "Knox",
+        "product_name": "Krypton 6.2KW PV9000 HYBRID",
+        "model_number": null,
+        "series_name": "Krypton",
+        "variant_name": "6.2KW PV9000 HYBRID",
+        "market_name": null,
+        "source_names": [],
+        "aliases": [],
+        "status": "research"
+      },
+      "tiering": {
+        "tier": "UNRATED",
+        "score": null,
+        "confidence": "unknown"
+      },
+      "notes": "Exact model designation must be established from documentation/label evidence before treating this as uniquely identified."
     }
   ]
 }
