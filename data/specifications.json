@@ -3,19 +3,26 @@
   "records": [
     {
       "product_id": "itel-ipv-8k48u",
-      "source_confidence": "strong",
+      "source_confidence": "verified",
       "identity": {
         "model_number": "IPV-8K48U",
         "brand": "itel",
         "product_name": "IPV-8K48U"
       },
       "electrical": {
+        "device_type": "hybrid",
+        "phase": "single",
         "ac_output": {
           "rated_power_kw": 8,
           "rated_apparent_power_kva": 8,
           "nominal_output_voltage_v": [220, 230, 240],
           "frequency_hz": 50,
-          "thd_percent_max": 3
+          "thd_percent_max": 3,
+          "switch_time_ms_ups": 10,
+          "switch_time_ms_appliances": 20,
+          "surge_power_kw": 16,
+          "surge_duration_s": 5,
+          "overload_capacity": "105%-150%@10S, 150%-200%@5S"
         },
         "pv": {
           "max_dc_power_kw": 16,
@@ -23,43 +30,69 @@
           "startup_voltage_v": 75,
           "mppt_voltage_range_v": [85, 450],
           "mppt_count": 2,
-          "max_dc_current_a": 45
+          "max_dc_current_a": 45,
+          "max_dc_current_per_mppt_a": [30, 15],
+          "mppt_tracking_efficiency_percent": 99.5
         },
         "battery": {
           "nominal_voltage_v": 48,
-          "supported_types": ["Lithium-ion", "Lead-acid"],
-          "battery_voltage_range_v": [40, 60]
+          "supported_types": ["Lead-acid", "Lithium-ion", "User Defined"],
+          "battery_voltage_range_v": [40, 60],
+          "max_charge_current_a": 160,
+          "max_mains_generator_charge_current_a": 160,
+          "max_discharge_current_a": 180
+        },
+        "ac_input": {
+          "max_grid_input_voltage_vrms": 380,
+          "input_voltage_range_v": [90, 280],
+          "max_ac_input_current_a_bypass": 36.4,
+          "frequency_hz": [50, 60]
         }
       },
       "efficiency": {
-        "peak_efficiency_percent": null,
-        "mppt_efficiency_percent": null
+        "mppt_tracking_efficiency_percent": 99.5,
+        "battery_mode_conversion_efficiency_percent": 93,
+        "marketing_claimed_min_conversion_efficiency_percent": 95,
+        "efficiency_note": "Official datasheet product table states 93% for IPV-8K48U battery-mode conversion efficiency, while the generic product-features banner states >=95%. Conflict retained rather than silently resolved."
       },
       "physical": {
-        "dimensions_mm_hwd": [520, 420, 125],
+        "dimensions_mm_dwd": [125, 420, 520],
         "weight_kg": 20,
-        "noise_db_a_max": 45,
+        "noise_db_a_max_pv_connected": 55,
+        "noise_db_a_max_no_pv": 45,
         "operating_temperature_c": [-10, 55],
+        "temperature_derating_above_c": 45,
         "max_altitude_m": 4000,
-        "ingress_protection": "IP54"
+        "altitude_derating_above_m": 2000,
+        "ingress_protection": "IP54",
+        "cooling_method": "Intelligent Fan Cooling"
       },
-      "communications": ["RS232", "RS485", "WLAN", "CAN"],
+      "communications": ["WIFI", "RS485", "CAN", "RS232", "Dry Contact"],
+      "features": {
+        "dual_output": true,
+        "smart_load_support": true,
+        "diesel_generator_support": true,
+        "parallel_single_phase_max_units": 9,
+        "parallel_three_phase_max_units": 12
+      },
       "protection": [
         "short circuit protection",
         "overload protection",
         "overvoltage protection",
         "overtemperature protection",
-        "surge protection"
+        "surge protection",
+        "DC surge protection Type III",
+        "AC surge protection Type III"
       ],
-      "parallel": {
-        "supported": null,
-        "max_units": null
-      },
+      "certifications": ["IEC62109-1", "IEC62109-2", "IEC61683"],
       "notes": [
-        "ENF lists the combined product entry IPV-8K/12K48U and provides separate IPV-8K48U values.",
-        "The Pakistan retail listing describes the unit as single-phase, hybrid and IP54, but some detailed marketing claims require direct manufacturer-document verification before normalization."
+        "Manufacturer-origin datasheet is now the primary specification source.",
+        "Official datasheet gives IPV-8K48U PV current as 30A+15A; 45A is the aggregate value, not 45A independently available on each MPPT.",
+        "Official datasheet explicitly states dual output supporting Smart Load and Main Load.",
+        "Official datasheet explicitly states single-phase parallel support up to 9 units.",
+        "Dimensions are stored in manufacturer order D*W*H: 125*420*520 mm."
       ],
-      "evidence_refs": ["ev-itel-ipv-8k48u-enf-2026", "ev-itel-ipv-8k48u-pakistan-retail-2026"]
+      "evidence_refs": ["ev-itel-ipv-8k48u-official-datasheet-2026", "ev-itel-ipv-8k48u-enf-2026", "ev-itel-ipv-8k48u-pakistan-retail-2026"]
     }
   ]
 }
