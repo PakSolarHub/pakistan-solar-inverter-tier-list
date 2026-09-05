@@ -1,5 +1,270 @@
 {
   "schema_version": "1.0",
   "description": "Canonical product identity records. Brand, product name, and exact model are intentionally separate.",
-  "records": []
+  "phase": "phase_1",
+  "scope": "Pakistan market shortlist for initial research: Solis, GoodWe, Itel, and Knox.",
+  "selection_policy": {
+    "primary_source": "Official Pakistan manufacturer or authorized local product source where available.",
+    "secondary_sources": "Manufacturer global documentation, official datasheets/manuals, authorized distributors, independent sources, and owner reports will be added as evidence records.",
+    "identity_rule": "Do not merge products solely because names, ratings, specifications, or apparent OEM platforms are similar.",
+    "model_rule": "An exact model designation is retained separately from brand, product name, series, variant, and market name. Where exact identity remains uncertain, model_number stays null until verified."
+  },
+  "records": [
+    {
+      "id": "solis-s6-eh1p6k-l-plus",
+      "identity": {
+        "brand_name": "Solis",
+        "product_name": "S6-EH1P6K-L-PLUS",
+        "model_number": "S6-EH1P6K-L-PLUS",
+        "series_name": "S6-EH1P(3-10)K-L-PLUS",
+        "variant_name": "6kW",
+        "market_name": null,
+        "source_names": ["S6-EH1P6K-L-PLUS"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://www.solisinverters.com/pk/energy_storage_inverters19/S6-EH1P%283-10%29K-L-PLUS_pk.html"]
+    },
+    {
+      "id": "solis-s6-eh1p8k-l-plus",
+      "identity": {
+        "brand_name": "Solis",
+        "product_name": "S6-EH1P8K-L-PLUS",
+        "model_number": "S6-EH1P8K-L-PLUS",
+        "series_name": "S6-EH1P(3-10)K-L-PLUS",
+        "variant_name": "8kW",
+        "market_name": null,
+        "source_names": ["S6-EH1P8K-L-PLUS"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://www.solisinverters.com/pk/energy_storage_inverters19/S6-EH1P%283-10%29K-L-PLUS_pk.html"]
+    },
+    {
+      "id": "solis-s6-eh1p10k-l-plus-21a",
+      "identity": {
+        "brand_name": "Solis",
+        "product_name": "S6-EH1P10K-L-PLUS(21A)",
+        "model_number": "S6-EH1P10K-L-PLUS(21A)",
+        "series_name": "S6-EH1P(3-10)K-L-PLUS",
+        "variant_name": "10kW / 21A",
+        "market_name": null,
+        "source_names": ["S6-EH1P10K-L-PLUS(21A)"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://www.solisinverters.com/pk/energy_storage_inverters19/S6-EH1P%283-10%29K-L-PLUS_pk.html"]
+    },
+    {
+      "id": "solis-s6-eo1p6k-48",
+      "identity": {
+        "brand_name": "Solis",
+        "product_name": "S6-EO1P(4-6)K-48",
+        "model_number": null,
+        "series_name": "S6-EO1P(4-6)K-48",
+        "variant_name": "4-6kW family",
+        "market_name": null,
+        "source_names": ["S6-EO1P(4-6)K-48"],
+        "aliases": [],
+        "status": "candidate_family_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://www.solisinverters.com/pk/inverter.html"]
+    },
+    {
+      "id": "goodwe-gw8000-es-c10",
+      "identity": {
+        "brand_name": "GoodWe",
+        "product_name": "ES Uniq",
+        "model_number": "GW8000-ES-C10",
+        "series_name": "ES Uniq",
+        "variant_name": "8kW",
+        "market_name": null,
+        "source_names": ["GW8000-ES-C10", "ES Uniq 8kW"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://en.goodwe.com/pakistan", "https://en.goodwe.com/products/energy-storage-products/es-uniq"]
+    },
+    {
+      "id": "goodwe-gw10k-es-c10",
+      "identity": {
+        "brand_name": "GoodWe",
+        "product_name": "ES Uniq",
+        "model_number": "GW10K-ES-C10",
+        "series_name": "ES Uniq",
+        "variant_name": "10kW",
+        "market_name": null,
+        "source_names": ["GW10K-ES-C10", "ES Uniq 10kW"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://en.goodwe.com/pakistan", "https://en.goodwe.com/products/energy-storage-products/es-uniq"]
+    },
+    {
+      "id": "goodwe-gw12k-es-c10",
+      "identity": {
+        "brand_name": "GoodWe",
+        "product_name": "ES Uniq",
+        "model_number": "GW12K-ES-C10",
+        "series_name": "ES Uniq",
+        "variant_name": "12kW",
+        "market_name": null,
+        "source_names": ["GW12K-ES-C10", "ES Uniq 12kW"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://en.goodwe.com/pakistan", "https://en.goodwe.com/products/energy-storage-products/es-uniq"]
+    },
+    {
+      "id": "goodwe-gw8000-sdt-30",
+      "identity": {
+        "brand_name": "GoodWe",
+        "product_name": "SDT G3",
+        "model_number": "GW8000-SDT-30",
+        "series_name": "SDT G3",
+        "variant_name": "8kW three-phase",
+        "market_name": null,
+        "source_names": ["GW8000-SDT-30", "SDT G3 8kW"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://en.goodwe.com/pakistan", "https://en.goodwe.com/sdt-g3"]
+    },
+    {
+      "id": "itel-ipv-4k24u-pro",
+      "identity": {
+        "brand_name": "itel",
+        "product_name": "IPV-4K24U Pro",
+        "model_number": "IPV-4K24U Pro",
+        "series_name": "IP54 Pro",
+        "variant_name": "4kW / 24V",
+        "market_name": null,
+        "source_names": ["IPV-4K24U Pro", "itel 4kW Pro IP54 Hybrid Solar Inverter"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://itel-pk.com/pages/itel-energy"]
+    },
+    {
+      "id": "itel-ipv-6k48u-pro",
+      "identity": {
+        "brand_name": "itel",
+        "product_name": "IPV-6K48U Pro",
+        "model_number": "IPV-6K48U Pro",
+        "series_name": "IP54 Pro",
+        "variant_name": "6kW / 48V",
+        "market_name": null,
+        "source_names": ["IPV-6K48U Pro", "IPV-6K48U"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://itel-pk.com/pages/itel-energy", "https://energy.itel-life.com/"]
+    },
+    {
+      "id": "itel-ipv-8k48u",
+      "identity": {
+        "brand_name": "itel",
+        "product_name": "IPV-8K48U",
+        "model_number": "IPV-8K48U",
+        "series_name": "IP54",
+        "variant_name": "8kW / 48V",
+        "market_name": null,
+        "source_names": ["IPV-8K48U", "itel 8kW 48V Hybrid Solar Inverter"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://itel-pk.com/pages/itel-energy"]
+    },
+    {
+      "id": "itel-ipv-12k48u",
+      "identity": {
+        "brand_name": "itel",
+        "product_name": "IPV-12K48U",
+        "model_number": "IPV-12K48U",
+        "series_name": "IP54",
+        "variant_name": "12kW / 48V",
+        "market_name": null,
+        "source_names": ["IPV-12K48U", "itel 12kW 48V Hybrid Solar Inverter"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://itel-pk.com/pages/itel-energy"]
+    },
+    {
+      "id": "knox-krypton-6000",
+      "identity": {
+        "brand_name": "Knox",
+        "product_name": "Krypton 6000",
+        "model_number": "4kW-24-pV6000-TWIN",
+        "series_name": "Krypton",
+        "variant_name": "4kW / 24V",
+        "market_name": null,
+        "source_names": ["Krypton 6000", "4kW-24-pV6000-TWIN"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://knox.com.pk/product/knox-krypton-6000-6500/"]
+    },
+    {
+      "id": "knox-krypton-6500",
+      "identity": {
+        "brand_name": "Knox",
+        "product_name": "Krypton 6500",
+        "model_number": "4.5kW-24-pV6500-TWIN",
+        "series_name": "Krypton",
+        "variant_name": "4.5kW / 24V",
+        "market_name": null,
+        "source_names": ["Krypton 6500", "4.5kW-24-pV6500-TWIN"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://knox.com.pk/product/knox-krypton-6000-6500/"]
+    },
+    {
+      "id": "knox-krypton-9000",
+      "identity": {
+        "brand_name": "Knox",
+        "product_name": "Krypton 9000",
+        "model_number": null,
+        "series_name": "Krypton",
+        "variant_name": "6.2kW",
+        "market_name": null,
+        "source_names": ["Krypton 9000", "Krypton 9000 RGB"],
+        "aliases": [],
+        "status": "candidate_model_pending"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://knox.com.pk/product-category/solar-inverters/hybrid-solar-inverters/krypton-series/"]
+    },
+    {
+      "id": "knox-krypton-9055",
+      "identity": {
+        "brand_name": "Knox",
+        "product_name": "Krypton 9055",
+        "model_number": "6.5kW-48-pV9055-TWIN",
+        "series_name": "Krypton",
+        "variant_name": "6.5kW / 48V",
+        "market_name": null,
+        "source_names": ["Krypton 9055", "6.5kW-48-pV9055-TWIN"],
+        "aliases": [],
+        "status": "candidate_verified_identity"
+      },
+      "tiering": {"tier": "UNRATED", "score": null, "confidence": "unknown"},
+      "initial_sources": ["https://knox.com.pk/product/knox-krypton-9055-inverter/"]
+    }
+  ]
 }
