@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.2",
+  "last_schema_review": "2026-09-05",
+  "records": [
+    {
+      "id": "itel-ipv-8k48u",
+      "brand": "Itel",
+      "model": "IPV-8K48U",
+      "status": "research",
+      "tier": "UNRATED",
+      "score": null,
+      "confidence": "unknown",
+      "notes": "Initial record. Specifications and OEM relationship must be verified against primary documentation before scoring."
+    },
+    {
+      "id": "knox-krypton-6-2kw-pv9000",
+      "brand": "Knox",
+      "model": "Krypton 6.2KW PV9000 HYBRID",
+      "status": "research",
+      "tier": "UNRATED",
+      "score": null,
+      "confidence": "unknown",
+      "notes": "Initial record. Specifications and OEM relationship must be verified against primary documentation before scoring."
+    }
+  ]
+}
