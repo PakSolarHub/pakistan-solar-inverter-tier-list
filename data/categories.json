@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "description": "Category definitions and filter taxonomy for the Pakistan solar inverter database.",
+  "active_v1": {
+    "id": "single_phase_lv_hybrid_6_0_6_9kw",
+    "name": "6-6.9 kW Single-Phase LV Hybrid",
+    "inclusion_rules": {
+      "nominal_ac_output_kw_min": 6.0,
+      "nominal_ac_output_kw_max_exclusive": 7.0,
+      "phase": "single_phase",
+      "battery_architecture": "low_voltage",
+      "product_type": "hybrid",
+      "market_scope": "Pakistan"
+    },
+    "exclusions": [
+      "high_voltage_battery_architecture",
+      "three_phase",
+      "split_phase",
+      "ac_coupled_retrofit_only",
+      "off_grid_only",
+      "grid_tied_only"
+    ],
+    "notes": [
+      "6.0 through 6.9 kW nominal AC products qualify; do not require the manufacturer to market the product as exactly 6 kW.",
+      "Different exact model numbers remain separate products even when they share a series or platform.",
+      "HV products are retained as future database candidates where identified but are not part of the V1 tier pool."
+    ]
+  },
+  "future_categories": [
+    {
+      "id": "single_phase_hv_hybrid_6_0_6_9kw",
+      "name": "6-6.9 kW Single-Phase HV Hybrid",
+      "status": "future"
+    }
+  ],
+  "filters": {
+    "architecture": ["LV", "HV"],
+    "phase": ["single_phase", "split_phase", "three_phase"],
+    "product_type": ["hybrid", "off_grid", "grid_tied", "ac_coupled"],
+    "mppt_count": [1, 2, 3, 4, "5_plus"],
+    "battery_voltage_class": ["24V", "48V", "HV"],
+    "cooling": ["fanless", "fan_cooled", "intelligent_fan", "unknown"],
+    "ip_rating": ["IP20", "IP54", "IP65", "IP66", "other", "unknown"],
+    "features": [
+      "smart_load",
+      "generator_support",
+      "parallel_operation",
+      "ac_coupling",
+      "ups_backup",
+      "zero_export",
+      "battery_bms_communication"
+    ]
+  },
+  "filter_principle": "Filters describe product attributes and do not by themselves determine tier placement or score."
+}
