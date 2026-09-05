@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0",
+  "category": "6kw",
+  "category_rule": {
+    "nominal_ac_output_min_kw": 6.0,
+    "nominal_ac_output_max_kw_exclusive": 7.0,
+    "scope": "Single-phase, low-voltage battery, hybrid/energy-storage inverters"
+  },
+  "manufacturer": "Solis",
+  "evidence_policy": "Technical values are recorded with source/confidence notes. Conflicting generations or regional variants are not silently merged.",
+  "products": [
+    {
+      "id": "solis-s6-eh1p6k-l-eu",
+      "model": "S6-EH1P6K-L-EU",
+      "series": "S6-EH1P(3-6)K-L-EU",
+      "identity_status": "verified",
+      "architecture": {
+        "phase": "single-phase",
+        "battery_architecture": "LV",
+        "battery_voltage_range_v": "42-58",
+        "hybrid": true,
+        "on_grid": true,
+        "off_grid": true
+      },
+      "ac": {
+        "rated_output_kw": 6.0,
+        "max_apparent_output_kva": 6.6,
+        "grid_voltage_v": "220/230",
+        "grid_voltage_range_v": "187-253",
+        "frequency_hz": "50/60",
+        "rated_output_current_a": "27.3 @220V / 26.1 @230V",
+        "max_output_current_a": 30.0,
+        "power_factor": ">0.99 (0.8 leading to 0.8 lagging)",
+        "thdi": "<2%"
+      },
+      "pv": {
+        "recommended_max_pv_kw": 9.6,
+        "max_input_voltage_v": 600,
+        "rated_pv_voltage_v": 330,
+        "startup_voltage_v": 90,
+        "mppt_voltage_range_v": "90-520",
+        "full_load_mppt_voltage_range_v": "210-520",
+        "mppt_count": 2,
+        "max_input_current_a": "16/16",
+        "max_short_circuit_current_a": "24/24",
+        "max_input_strings": 2,
+        "dc_ac_ratio_supported": 1.6
+      },
+      "battery": {
+        "battery_type": "Li-ion / Lead-acid",
+        "max_charge_power_kw": 6.0,
+        "max_charge_discharge_current_a": 125,
+        "battery_capacity_range_ah": "50-2000",
+        "communication": "CAN/RS485"
+      },
+      "backup": {
+        "rated_backup_power_kw": 6.0,
+        "max_apparent_backup_kva": "8 kVA for 60 sec",
+        "transfer_time_ms": "<10",
+        "backup_thdv": "2%"
+      },
+      "hardware": {
+        "ip_rating": "IP66",
+        "cooling": "natural convection",
+        "noise_db_a": "<35",
+        "operating_temperature_c": "-25 to +60",
+        "max_altitude_m": 4000,
+        "dimensions_mm": "405 x 480 x 205",
+        "weight_kg": 24.18,
+        "integrated_afci": true
+      },
+      "system_features": {
+        "parallel": "yes; up to 10 units according to S6-EH1P-L-EU brochure",
+        "three_phase_backup_parallel": false,
+        "generator_support": true,
+        "ac_coupling": "not yet verified for this exact EU model",
+        "zero_export": true,
+        "peak_shaving": true,
+        "monitoring": "SolisCloud",
+        "display": "LED + app; 7-inch LCD listed in manual"
+      },
+      "communications": ["RS485", "CAN", "optional Wi-Fi", "optional GPRS", "optional LAN", "Bluetooth"],
+      "warranty": "5 years standard; extension to 20 years stated in manual",
+      "evidence": [
+        {
+          "source": "manufacturer manual / Solis technical brochure",
+          "url": "https://www.solisinverters.com/global/energy_storage_inverters8/3_6k_s6_l_gl",
+          "confidence": "verified"
+        }
+      ],
+      "notes": "The official manual gives 42-58V battery range, 125A max charge/discharge, 600V PV maximum, 2 MPPTs and 9.6kW recommended PV."
+    },
+    {
+      "id": "solis-s6-eh1p6k-l-pro",
+      "model": "S6-EH1P6K-L-PRO",
+      "series": "S6-EH1P(3-6)K-L-PRO",
+      "identity_status": "verified",
+      "architecture": {
+        "phase": "single-phase",
+        "battery_architecture": "LV",
+        "battery_voltage_range_v": "40-60",
+        "hybrid": true,
+        "on_grid": true,
+        "off_grid": true
+      },
+      "ac": {
+        "rated_output_kw": 6.0,
+        "max_apparent_output_kva": 6.6,
+        "grid_voltage_v": "220/230",
+        "grid_voltage_range_v": "187-253",
+        "frequency_hz": "50/60",
+        "rated_output_current_a": "27.3 @220V / 26.1 @230V",
+        "max_output_current_a": 30.0,
+        "power_factor": ">0.99 (0.8 leading to 0.8 lagging)",
+        "thdi": "<2%"
+      },
+      "pv": {
+        "recommended_max_pv_kw": 9.6,
+        "max_input_voltage_v": 600,
+        "rated_pv_voltage_v": 330,
+        "startup_voltage_v": 90,
+        "mppt_voltage_range_v": "90-520",
+        "full_load_mppt_voltage_range_v": "210-520",
+        "mppt_count": 2,
+        "max_input_current_a": "16/16",
+        "max_short_circuit_current_a": "24/24",
+        "max_input_strings": 2
+      },
+      "battery": {
+        "battery_type": "Li-ion / Lead-acid",
+        "max_charge_discharge_power_kw": 6.0,
+        "max_charge_current_a": 135,
+        "max_discharge_current_a": 135,
+        "communication": "CAN/RS485"
+      },
+      "backup": {
+        "rated_backup_power_kw": 6.0,
+        "max_backup_overload": "200% of rated backup power for 10 sec",
+        "transfer_time_ms": "not yet verified from exact current datasheet"
+      },
+      "hardware": {
+        "ip_rating": "IP66",
+        "cooling": "intelligent cooling",
+        "operating_temperature_c": "-40 to +60",
+        "max_altitude_m": 3000,
+        "dimensions_mm": "406 x 560 x 205",
+        "weight_kg": 24
+      },
+      "system_features": {
+        "parallel": "yes; flexible single-phase and three-phase configurations up to 36kW",
+        "generator_support": true,
+        "peak_shaving": true,
+        "monitoring": "SolisCloud",
+        "display": "LED + app"
+      },
+      "communications": ["RS485", "CAN", "optional Wi-Fi", "optional GPRS", "optional LAN", "Bluetooth"],
+      "warranty": "5 years standard; extension to 20 years stated in manual",
+      "evidence": [
+        {
+          "source": "Solis official product page",
+          "url": "https://www.solisinverters.com/jo/energy_storage_inverters11/S6-EH1P%283-6%29K-L-PRO_jo.html",
+          "confidence": "verified"
+        },
+        {
+          "source": "Solis S6-EH1P(3-8)K-L-PRO manual",
+          "url": "https://solisinverters.au/uploads/files/202406/Solis_Manual_S6-EH1P%283-6%29K-L-PRO_EUR_V1%2C1%2820240311%29.pdf",
+          "confidence": "verified"
+        }
+      ],
+      "notes": "PRO is differentiated from the standard S6-L-EU by 135A battery current, 200%/10s backup overload capability and intelligent cooling/IP66."
+    },
+    {
+      "id": "solis-s6-eh1p6k-l-plus",
+      "model": "S6-EH1P6K-L-PLUS",
+      "series": "S6-EH1P(3-10)K-L-PLUS",
+      "identity_status": "verified",
+      "architecture": {
+        "phase": "single-phase",
+        "battery_architecture": "LV",
+        "battery_voltage_range_v": "40-60",
+        "hybrid": true,
+        "on_grid": true,
+        "off_grid": true
+      },
+      "ac": {
+        "rated_output_kw": 6.0,
+        "max_apparent_output_kva": 6.0,
+        "grid_voltage_v": "220/230",
+        "grid_voltage_range_v": "187-253",
+        "frequency_hz": "50/60",
+        "rated_output_current_a": "27.3 @220V / 26.1 @230V",
+        "max_output_current_a": "27.3 @220V / 26.1 @230V",
+        "power_factor": ">0.99 (0.8 leading to 0.8 lagging)",
+        "thdi": "<2%"
+      },
+      "pv": {
+        "recommended_max_pv_kw": 9.6,
+        "max_usable_pv_kw": 9.6,
+        "max_input_voltage_v": 500,
+        "rated_pv_voltage_v": 330,
+        "startup_voltage_v": 90,
+        "mppt_voltage_range_v": "90-435",
+        "full_load_mppt_voltage_range_v": "300-435",
+        "mppt_count": 2,
+        "max_input_current_a": "16/16 for base 6K-L-PLUS manual; 21/21 for explicitly designated 6K-L-PLUS(21A) variant",
+        "max_short_circuit_current_a": "20/20 base; 24/24 for explicitly designated 21A variant",
+        "max_input_strings": 2,
+        "pv_oversizing": "160% of rated DC power"
+      },
+      "battery": {
+        "battery_type": "Li-ion / Lead-acid",
+        "max_charge_discharge_power_kw": 6.0,
+        "max_charge_discharge_current_a": 135,
+        "communication": "CAN/RS485"
+      },
+      "backup": {
+        "rated_backup_power_kw": 6.0,
+        "max_backup_apparent_power": "2x rated power for 10 sec",
+        "transfer_time_ms": "<4"
+      },
+      "hardware": {
+        "ip_rating": "IP66",
+        "cooling": "intelligent cooling",
+        "operating_temperature_c": "-40 to +60",
+        "max_altitude_m": 3000,
+        "dimensions_mm": "335 x 560 x 253",
+        "weight_kg": 21.6,
+        "integrated_afci": "optional"
+      },
+      "system_features": {
+        "parallel": "up to 6 units",
+        "three_phase_parallel": true,
+        "generator_support": true,
+        "grid_tied_inverter_coupling": true,
+        "smart_load": true,
+        "pv_only_off_grid": true,
+        "peak_shaving": true,
+        "time_of_use": true,
+        "monitoring": "SolisCloud",
+        "display": "7-inch LCD + Bluetooth app"
+      },
+      "communications": ["RS485", "CAN", "Bluetooth", "optional Wi-Fi", "optional GPRS", "optional LAN"],
+      "warranty": "5 years standard; extension to 20 years stated in manual",
+      "evidence": [
+        {
+          "source": "Solis official global product page",
+          "url": "https://www.solisinverters.com/global/energy_storage_inverters19/S6-EH1P%283-10%29K-L-PLUS_gl.html",
+          "confidence": "verified"
+        },
+        {
+          "source": "Solis manual for S6-EH1P6K-L-PLUS",
+          "url": "https://device.report/m/1e8228af36d8c19df569ef00b230b259dcd27b846d9b4a3d4eaceb071e13702d",
+          "confidence": "strong"
+        },
+        {
+          "source": "Solis manual for explicitly designated 21A variant",
+          "url": "https://device.report/m/73bcc58c9ce63ecf815533aa86654313cd5a59e34b9915e38300a17f71afc339",
+          "confidence": "strong"
+        }
+      ],
+      "notes": "Important variant issue: the base S6-EH1P6K-L-PLUS manual lists 16A/MPPT and 20A short-circuit current, while the newer explicitly named 6K-L-PLUS(21A) documentation lists 21A/MPPT and 24A short-circuit current. These must remain separate variants until model labeling is confirmed in the Pakistan market."
+    },
+    {
+      "id": "solis-s5-eh1p6k-l",
+      "model": "S5-EH1P6K-L",
+      "series": "S5-EH1P(3-6)K-L",
+      "identity_status": "verified",
+      "architecture": {
+        "phase": "single-phase",
+        "battery_architecture": "LV",
+        "battery_voltage_range_v": "42-58",
+        "hybrid": true,
+        "on_grid": true,
+        "off_grid": true
+      },
+      "ac": {
+        "rated_output_kw": 6.0,
+        "max_apparent_output_kva": 6.6,
+        "grid_voltage_v": "220/230",
+        "grid_voltage_range_v": "187-265",
+        "frequency_hz": "50/60",
+        "rated_output_current_a": "27.3 @220V / 26.1 @230V",
+        "max_output_current_a": 30.0,
+        "power_factor": ">0.99 (0.8 leading to 0.8 lagging)",
+        "thdi": "<3%"
+      },
+      "pv": {
+        "recommended_max_pv_array_kw": 12.0,
+        "max_usable_pv_kw": 8.0,
+        "max_input_voltage_v": 600,
+        "rated_pv_voltage_v": 330,
+        "startup_voltage_v": 120,
+        "mppt_voltage_range_v": "90-520",
+        "full_load_mppt_voltage_range_v": "200-520",
+        "mppt_count": 2,
+        "max_input_current_a": "15/15",
+        "max_short_circuit_current_a": "22.5/22.5",
+        "max_input_strings": 2
+      },
+      "battery": {
+        "battery_type": "Li-ion / Lead-acid",
+        "max_charge_discharge_power_kw": 5.0,
+        "max_charge_discharge_current_a": 100,
+        "battery_capacity_range_ah": "50-2000",
+        "communication": "CAN"
+      },
+      "backup": {
+        "rated_backup_power_kw": 5.0,
+        "max_backup_apparent_power": "7 kVA for 10 sec",
+        "transfer_time_ms": "<20"
+      },
+      "hardware": {
+        "ip_rating": "IP65",
+        "cooling": "natural convection",
+        "noise_db_a": "<20",
+        "operating_temperature_c": "-25 to +60",
+        "max_altitude_m": 3000,
+        "dimensions_mm": "333 x 505 x 249",
+        "weight_kg": 18.3
+      },
+      "system_features": {
+        "parallel": "not yet fully verified for 6K exact configuration",
+        "generator_support": true,
+        "peak_shaving": true,
+        "monitoring": "SolisCloud / optional datalogger",
+        "display": "7-inch LCD + app",
+        "afci": true
+      },
+      "communications": ["CAN", "RS485", "optional Wi-Fi", "optional GPRS"],
+      "warranty": "5 years standard; extension to 20 years stated in manual",
+      "evidence": [
+        {
+          "source": "Solis official product page",
+          "url": "https://www.solisinverters.com/global/energy_storage_inverter5/3_6k_s5_l_se.html",
+          "confidence": "verified"
+        },
+        {
+          "source": "Solis S5-EH1P(3-6)K-L manual",
+          "url": "https://device.report/m/965fb3b14e8b09d4eebdb6b2ccaef3730b63c8dd61062d49c29d487c21f7230c",
+          "confidence": "strong"
+        }
+      ],
+      "notes": "The S5 6K is technically a 6kW hybrid but has only 5kW rated backup/charge-discharge power, making it materially different from the newer S6 6K models."
+    }
+  ]
+}
