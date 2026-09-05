@@ -1,4 +1,46 @@
 {
   "schema_version": "1.0",
-  "records": []
+  "records": [
+    {
+      "id": "ev-itel-ipv-8k48u-enf-2026",
+      "product_id": "itel-ipv-8k48u",
+      "source_type": "independent_technical_directory",
+      "source_name": "ENF Solar",
+      "source_url": "https://www.enfsolar.com/pv/inverter-datasheet/21229",
+      "retrieved": "2026-09-05",
+      "confidence": "strong",
+      "supports": [
+        "8 kW nominal AC power",
+        "16 kW maximum DC power",
+        "500 V maximum DC voltage",
+        "75 V startup voltage",
+        "85-450 V MPPT range",
+        "2 MPPT trackers",
+        "45 A maximum DC current",
+        "48 V nominal battery",
+        "IP54",
+        "-10 to +55 C operating temperature",
+        "4000 m maximum altitude",
+        "RS232/RS485/WLAN/CAN interfaces"
+      ],
+      "caveats": "Directory identifies the combined IPV-8K/12K48U product entry and attributes the listed values to the individual IPV-8K48U model. Manufacturer-origin documentation is preferred for final verification."
+    },
+    {
+      "id": "ev-itel-ipv-8k48u-pakistan-retail-2026",
+      "product_id": "itel-ipv-8k48u",
+      "source_type": "pakistan_retailer",
+      "source_name": "Kamal Solar",
+      "source_url": "https://kamalsolar.pk/products/itel-8kw-3-phase-hybrid-solar-inverter",
+      "retrieved": "2026-09-05",
+      "confidence": "moderate",
+      "supports": [
+        "IPV-8K48U model naming",
+        "8 kW rated output",
+        "single-phase market description",
+        "IP54 market description",
+        "16 kW maximum PV input"
+      ],
+      "caveats": "Retailer page contains additional technical and marketing claims that are not yet accepted as canonical until corroborated by manufacturer documentation. The URL slug says 3-phase while the page body says single-phase; this conflict is retained rather than resolved by assumption."
+    }
+  ]
 }
