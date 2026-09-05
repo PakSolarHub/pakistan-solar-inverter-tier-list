@@ -2,6 +2,50 @@
   "schema_version": "1.0",
   "records": [
     {
+      "id": "ev-itel-ipv-8k48u-official-datasheet-2026",
+      "product_id": "itel-ipv-8k48u",
+      "source_type": "manufacturer_datasheet",
+      "source_name": "itel Energy",
+      "source_url": "https://www.itel-life.com/fileadmin/assets/img/ESS/User_Manual/IP54_IPV-8K48U_IPV-12K48U_Datasheet.pdf",
+      "retrieved": "2026-09-05",
+      "confidence": "verified",
+      "supports": [
+        "IPV-8K48U exact model identity",
+        "8 kW nominal AC output",
+        "8 kVA apparent output",
+        "220/230/240 VAC nominal output",
+        "50 Hz nominal output frequency",
+        "<3% output THD",
+        "10 ms UPS / 20 ms appliances switching time",
+        "16 kW surge for 5 seconds",
+        "105%-150% overload for 10 seconds and 150%-200% for 5 seconds",
+        "16 kW maximum PV input",
+        "500 V maximum PV voltage",
+        "75 V startup voltage",
+        "85-450 V MPPT range",
+        "2 MPPT trackers",
+        "30A+15A PV input current",
+        "99.5% MPPT tracking efficiency",
+        "48 V battery and 40-60 V battery range",
+        "160 A maximum MPPT charging current",
+        "160 A maximum mains/generator charging current",
+        "180 A maximum discharge current",
+        "90-280 VAC input range",
+        "36.4 A maximum AC bypass input current",
+        "IP54",
+        "-10 to +55 C operating temperature with derating above 45 C",
+        "4000 m maximum altitude with derating above 2000 m",
+        "WIFI/RS485/CAN/RS232/Dry Contact",
+        "diesel generator support",
+        "smart load support",
+        "dual output for Smart Load and Main Load",
+        "single-phase parallel up to 9 units",
+        "intelligent fan cooling",
+        "IEC62109-1/IEC62109-2/IEC61683"
+      ],
+      "caveats": "The datasheet's product-features banner says battery-mode conversion efficiency >=95%, while the IPV-8K48U row in the efficiency table states 93%. Both values are retained as an explicit manufacturer-source conflict."
+    },
+    {
       "id": "ev-itel-ipv-8k48u-enf-2026",
       "product_id": "itel-ipv-8k48u",
       "source_type": "independent_technical_directory",
@@ -16,14 +60,14 @@
         "75 V startup voltage",
         "85-450 V MPPT range",
         "2 MPPT trackers",
-        "45 A maximum DC current",
+        "45 A aggregate maximum DC current",
         "48 V nominal battery",
         "IP54",
         "-10 to +55 C operating temperature",
         "4000 m maximum altitude",
         "RS232/RS485/WLAN/CAN interfaces"
       ],
-      "caveats": "Directory identifies the combined IPV-8K/12K48U product entry and attributes the listed values to the individual IPV-8K48U model. Manufacturer-origin documentation is preferred for final verification."
+      "caveats": "Now treated as corroborating evidence because the manufacturer datasheet has been located."
     },
     {
       "id": "ev-itel-ipv-8k48u-pakistan-retail-2026",
@@ -40,7 +84,7 @@
         "IP54 market description",
         "16 kW maximum PV input"
       ],
-      "caveats": "Retailer page contains additional technical and marketing claims that are not yet accepted as canonical until corroborated by manufacturer documentation. The URL slug says 3-phase while the page body says single-phase; this conflict is retained rather than resolved by assumption."
+      "caveats": "Retailer page contains additional technical and marketing claims that are not accepted as canonical when unsupported by manufacturer documentation. The URL slug says 3-phase while the page body says single-phase; this conflict remains recorded."
     }
   ]
 }
