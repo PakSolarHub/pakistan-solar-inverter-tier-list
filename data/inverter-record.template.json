@@ -1,0 +1,40 @@
+{
+  "id": "brand-model",
+  "identity": {
+    "brand": null,
+    "model": null,
+    "series": null,
+    "variant": null,
+    "market_name": null,
+    "device_type": null,
+    "phase": null,
+    "rated_power_kw": null,
+    "rated_apparent_power_kva": null,
+    "status": "research"
+  },
+  "tiering": {
+    "tier": "UNRATED",
+    "score": null,
+    "confidence": "unknown",
+    "last_verified_date": null
+  },
+  "electrical": {
+    "ac_output": {},
+    "pv": {},
+    "battery": {},
+    "grid": {},
+    "protection": {}
+  },
+  "physical_environment": {},
+  "display_controls_firmware": {},
+  "communications_monitoring": {},
+  "warranty_support": {},
+  "pakistan_market": {},
+  "oem_provenance": {},
+  "reliability": {},
+  "evidence": [],
+  "comparison_notes": [],
+  "unknowns": [],
+  "conflicts": [],
+  "last_updated": null
+}
