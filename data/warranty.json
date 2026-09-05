@@ -1,4 +1,1 @@
-{
-  "schema_version": "1.0",
-  "records": []
-}
+{"schema_version":"1.0","records":[{"product_id":"itel-ipv-6k48u-pro","warranty_claims":[{"type":"replacement","duration_years":3,"status":"retailer_reported","source_url":"https://roshanex.pk/itel-6kw-pro-hybrid-solar-inverter/"},{"type":"service","duration_years":5,"status":"retailer_reported","source_url":"https://roshanex.pk/itel-6kw-pro-hybrid-solar-inverter/"},{"type":"replacement","duration_years":3,"status":"retailer_reported","source_url":"https://www.thesaverhub.com/products/itel-inverter-6kw-sp-hybrid-pro-1"}],"confidence":"moderate","notes":"3-year replacement and 5-year service are repeatedly advertised by Pakistan retailers, but a direct manufacturer warranty document for the exact IPV-6K48U Pro was not located during this research pass. Keep these as retailer-reported until primary terms are obtained."}]}
