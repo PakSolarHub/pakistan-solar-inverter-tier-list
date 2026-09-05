@@ -9,40 +9,7 @@
       "source_url": "https://www.itel-life.com/fileadmin/assets/img/ESS/User_Manual/IP54_IPV-8K48U_IPV-12K48U_Datasheet.pdf",
       "retrieved": "2026-09-05",
       "confidence": "verified",
-      "supports": [
-        "IPV-8K48U exact model identity",
-        "8 kW nominal AC output",
-        "8 kVA apparent output",
-        "220/230/240 VAC nominal output",
-        "50 Hz nominal output frequency",
-        "<3% output THD",
-        "10 ms UPS / 20 ms appliances switching time",
-        "16 kW surge for 5 seconds",
-        "105%-150% overload for 10 seconds and 150%-200% for 5 seconds",
-        "16 kW maximum PV input",
-        "500 V maximum PV voltage",
-        "75 V startup voltage",
-        "85-450 V MPPT range",
-        "2 MPPT trackers",
-        "30A+15A PV input current",
-        "99.5% MPPT tracking efficiency",
-        "48 V battery and 40-60 V battery range",
-        "160 A maximum MPPT charging current",
-        "160 A maximum mains/generator charging current",
-        "180 A maximum discharge current",
-        "90-280 VAC input range",
-        "36.4 A maximum AC bypass input current",
-        "IP54",
-        "-10 to +55 C operating temperature with derating above 45 C",
-        "4000 m maximum altitude with derating above 2000 m",
-        "WIFI/RS485/CAN/RS232/Dry Contact",
-        "diesel generator support",
-        "smart load support",
-        "dual output for Smart Load and Main Load",
-        "single-phase parallel up to 9 units",
-        "intelligent fan cooling",
-        "IEC62109-1/IEC62109-2/IEC61683"
-      ],
+      "supports": ["IPV-8K48U exact model identity", "8 kW nominal AC output", "8 kVA apparent output", "220/230/240 VAC nominal output", "50 Hz nominal output frequency", "<3% output THD", "10 ms UPS / 20 ms appliances switching time", "16 kW surge for 5 seconds", "105%-150% overload for 10 seconds and 150%-200% for 5 seconds", "16 kW maximum PV input", "500 V maximum PV voltage", "75 V startup voltage", "85-450 V MPPT range", "2 MPPT trackers", "30A+15A PV input current", "99.5% MPPT tracking efficiency", "48 V battery and 40-60 V battery range", "160 A maximum MPPT charging current", "160 A maximum mains/generator charging current", "180 A maximum discharge current", "90-280 VAC input range", "36.4 A maximum AC bypass input current", "IP54", "-10 to +55 C operating temperature with derating above 45 C", "4000 m maximum altitude with derating above 2000 m", "WIFI/RS485/CAN/RS232/Dry Contact", "diesel generator support", "smart load support", "dual output for Smart Load and Main Load", "single-phase parallel up to 9 units", "intelligent fan cooling", "IEC62109-1/IEC62109-2/IEC61683"],
       "caveats": "The datasheet's product-features banner says battery-mode conversion efficiency >=95%, while the IPV-8K48U row in the efficiency table states 93%. Both values are retained as an explicit manufacturer-source conflict."
     },
     {
@@ -53,20 +20,7 @@
       "source_url": "https://www.enfsolar.com/pv/inverter-datasheet/21229",
       "retrieved": "2026-09-05",
       "confidence": "strong",
-      "supports": [
-        "8 kW nominal AC power",
-        "16 kW maximum DC power",
-        "500 V maximum DC voltage",
-        "75 V startup voltage",
-        "85-450 V MPPT range",
-        "2 MPPT trackers",
-        "45 A aggregate maximum DC current",
-        "48 V nominal battery",
-        "IP54",
-        "-10 to +55 C operating temperature",
-        "4000 m maximum altitude",
-        "RS232/RS485/WLAN/CAN interfaces"
-      ],
+      "supports": ["8 kW nominal AC power", "16 kW maximum DC power", "500 V maximum DC voltage", "75 V startup voltage", "85-450 V MPPT range", "2 MPPT trackers", "45 A aggregate maximum DC current", "48 V nominal battery", "IP54", "-10 to +55 C operating temperature", "4000 m maximum altitude", "RS232/RS485/WLAN/CAN interfaces"],
       "caveats": "Now treated as corroborating evidence because the manufacturer datasheet has been located."
     },
     {
@@ -77,14 +31,30 @@
       "source_url": "https://kamalsolar.pk/products/itel-8kw-3-phase-hybrid-solar-inverter",
       "retrieved": "2026-09-05",
       "confidence": "moderate",
-      "supports": [
-        "IPV-8K48U model naming",
-        "8 kW rated output",
-        "single-phase market description",
-        "IP54 market description",
-        "16 kW maximum PV input"
-      ],
+      "supports": ["IPV-8K48U model naming", "8 kW rated output", "single-phase market description", "IP54 market description", "16 kW maximum PV input"],
       "caveats": "Retailer page contains additional technical and marketing claims that are not accepted as canonical when unsupported by manufacturer documentation. The URL slug says 3-phase while the page body says single-phase; this conflict remains recorded."
+    },
+    {
+      "id": "ev-solis-s6-eh1p6k-l-plus-official-pakistan-2026",
+      "product_id": "solis-s6-eh1p6k-l-plus",
+      "source_type": "manufacturer_pakistan_product_page",
+      "source_name": "Solis / Ginlong Technologies",
+      "source_url": "https://www.solisinverters.com/pk/energy_storage_inverters19/S6-EH1P%283-10%29K-L-PLUS_pk.html",
+      "retrieved": "2026-09-05",
+      "confidence": "verified",
+      "supports": ["S6-EH1P6K-L-PLUS model exists in Pakistan-market S6-EH1P(3-10)K-L-PLUS family", "6 kW model option", "2 MPPT architecture", "up to 21A PV input current", "40-60V battery range", "up to 160% PV input", "IP66", "generator connection", "smart load management", "PV-only off-grid mode", "7-inch industrial-grade touch screen", "under-10ms on/off-grid switching claim", "Solis Pakistan hotline"],
+      "caveats": "The page describes the wider series as a family; exact model-specific values not explicitly isolated on the page are not treated as 6K-only specifications."
+    },
+    {
+      "id": "ev-solis-s6-eh1p6k-l-plus-official-global-2026",
+      "product_id": "solis-s6-eh1p6k-l-plus",
+      "source_type": "manufacturer_global_product_page",
+      "source_name": "Solis / Ginlong Technologies",
+      "source_url": "https://www.solisinverters.com/global/energy_storage_inverters19/S6-EH1P%283-8%29K-L-PLUS_gl",
+      "retrieved": "2026-09-05",
+      "confidence": "verified",
+      "supports": ["S6-EH1P6K-L-PLUS is part of the single-phase low-voltage S6-EH1P(3-10)K-L-PLUS family", "40-60V low-voltage battery", "2 integrated MPPTs", "up to 21A per MPPT", "lithium and lead-acid battery compatibility", "up to 160% PV input", "generator compatibility", "grid-tied inverter coupling", "parallel operation", "smart load management", "under-10ms on/off-grid switching", "IP66", "SolisCloud monitoring"],
+      "caveats": "Series-level source; model-specific values will be confirmed from the exact datasheet/manual before being promoted to canonical 6K fields."
     }
   ]
 }
