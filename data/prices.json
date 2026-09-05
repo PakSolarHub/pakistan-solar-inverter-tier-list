@@ -1,4 +1,1 @@
-{
-  "schema_version": "1.0",
-  "records": []
-}
+{"schema_version":"1.0","records":[{"product_id":"itel-ipv-6k48u-pro","currency":"PKR","observed_prices":[{"price":142000,"seller":"Asbaab","source_url":"https://asbaab.pk/product/itel-6kw-solar-inverter/?action=register","observed":"2026-09-05"},{"price":143000,"seller":"Roshanex","source_url":"https://roshanex.pk/itel-6kw-pro-hybrid-solar-inverter/","observed":"2026-09-05"},{"price":145000,"seller":"Kamal Solar","source_url":"https://kamalsolar.pk/products/itel-6kw-single-phase-hybrid-solar-inverter","observed":"2026-09-05"},{"price":150000,"seller":"The Saver Hub","source_url":"https://www.thesaverhub.com/products/itel-inverter-6kw-sp-hybrid-pro-1","observed":"2026-09-05"},{"price":150000,"seller":"Satluj Solar","source_url":"https://satlujsolar.com/product/itel-ipv-6k48u-pro-6kw-48v-ip54-hybrid-solar-inverter/","observed":"2026-09-05"},{"price":155000,"seller":"itel Pakistan distributor store","source_url":"https://itel-pk.com/pages/itel-energy","observed":"2026-09-05"}],"price_range_observed_pkr":[142000,155000],"notes":"Retail snapshots only; price varies by seller, stock, region and warranty terms."}]}
