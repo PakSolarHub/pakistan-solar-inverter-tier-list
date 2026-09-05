@@ -1,4 +1,65 @@
 {
   "schema_version": "1.0",
-  "records": []
+  "records": [
+    {
+      "product_id": "itel-ipv-8k48u",
+      "source_confidence": "strong",
+      "identity": {
+        "model_number": "IPV-8K48U",
+        "brand": "itel",
+        "product_name": "IPV-8K48U"
+      },
+      "electrical": {
+        "ac_output": {
+          "rated_power_kw": 8,
+          "rated_apparent_power_kva": 8,
+          "nominal_output_voltage_v": [220, 230, 240],
+          "frequency_hz": 50,
+          "thd_percent_max": 3
+        },
+        "pv": {
+          "max_dc_power_kw": 16,
+          "max_dc_voltage_v": 500,
+          "startup_voltage_v": 75,
+          "mppt_voltage_range_v": [85, 450],
+          "mppt_count": 2,
+          "max_dc_current_a": 45
+        },
+        "battery": {
+          "nominal_voltage_v": 48,
+          "supported_types": ["Lithium-ion", "Lead-acid"],
+          "battery_voltage_range_v": [40, 60]
+        }
+      },
+      "efficiency": {
+        "peak_efficiency_percent": null,
+        "mppt_efficiency_percent": null
+      },
+      "physical": {
+        "dimensions_mm_hwd": [520, 420, 125],
+        "weight_kg": 20,
+        "noise_db_a_max": 45,
+        "operating_temperature_c": [-10, 55],
+        "max_altitude_m": 4000,
+        "ingress_protection": "IP54"
+      },
+      "communications": ["RS232", "RS485", "WLAN", "CAN"],
+      "protection": [
+        "short circuit protection",
+        "overload protection",
+        "overvoltage protection",
+        "overtemperature protection",
+        "surge protection"
+      ],
+      "parallel": {
+        "supported": null,
+        "max_units": null
+      },
+      "notes": [
+        "ENF lists the combined product entry IPV-8K/12K48U and provides separate IPV-8K48U values.",
+        "The Pakistan retail listing describes the unit as single-phase, hybrid and IP54, but some detailed marketing claims require direct manufacturer-document verification before normalization."
+      ],
+      "evidence_refs": ["ev-itel-ipv-8k48u-enf-2026", "ev-itel-ipv-8k48u-pakistan-retail-2026"]
+    }
+  ]
 }
