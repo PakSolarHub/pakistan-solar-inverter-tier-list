@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "snapshot_date": "2026-09-06",
+  "scope": "6.0 to <7.0 kW single-phase LV hybrid; Solis, GoodWe, itel",
+  "price_policy": "Observed retail/listed prices only; not MSRP and not a tier score. Multiple observations should be retained when available.",
+  "records": [
+    {
+      "product_id": "solis-s6-eh1p6k-l-plus",
+      "pakistan_market": {
+        "availability": "listed/in stock channel observed",
+        "observed_price_pkr": 220000,
+        "price_source_date": "2026-09-05",
+        "official_pakistan_listing": true,
+        "local_support": "official Pakistan hotline, WhatsApp and service email"
+      },
+      "warranty": {
+        "observed_claim": "5-year warranty claim on Pakistan retail listing",
+        "confidence": "moderate",
+        "official_regional_terms_required": true
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "solis-s6-eh1p6k-l-pro",
+      "pakistan_market": {
+        "availability": "listed/in stock channel observed",
+        "observed_price_pkr": 235000,
+        "price_source_date": "2026-08",
+        "official_pakistan_listing": false,
+        "local_support": "Solis Pakistan support channel exists; model-specific channel verification pending"
+      },
+      "warranty": {
+        "observed_claim": "5-year official brand warranty on retailer listing",
+        "confidence": "moderate",
+        "official_regional_terms_required": true
+      },
+      "confidence": "moderate"
+    },
+    {
+      "product_id": "solis-s5-eh1p6k-l",
+      "pakistan_market": {
+        "availability": "Pakistan availability not yet sufficiently verified",
+        "observed_price_pkr": null,
+        "official_pakistan_listing": false,
+        "local_support": "Solis Pakistan support channel exists"
+      },
+      "warranty": {
+        "observed_claim": null,
+        "confidence": "unknown"
+      },
+      "confidence": "unknown"
+    },
+    {
+      "product_id": "solis-s6-eh1p6k-l-eu",
+      "pakistan_market": {
+        "availability": "Pakistan-specific availability not yet sufficiently verified",
+        "observed_price_pkr": null,
+        "official_pakistan_listing": false,
+        "local_support": "Solis Pakistan support channel exists"
+      },
+      "warranty": {
+        "observed_claim": null,
+        "confidence": "unknown"
+      },
+      "confidence": "unknown"
+    },
+    {
+      "product_id": "goodwe-gw6000-es-20",
+      "pakistan_market": {
+        "availability": "widely listed",
+        "observed_price_pkr": 230000,
+        "price_source_date": "2026-09-01",
+        "official_pakistan_presence": true,
+        "official_pakistan_service": "GoodWe states fully equipped service hubs in Karachi and Lahore"
+      },
+      "warranty": {
+        "observed_claim": "5-year replacement / extended warranty claims appear in Pakistan retail channels; exact model-specific Pakistan terms require confirmation",
+        "confidence": "moderate"
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "goodwe-gw6000m-es-20",
+      "pakistan_market": {
+        "availability": "Pakistan availability not yet sufficiently verified separately from GW6000-ES-20",
+        "observed_price_pkr": null,
+        "official_pakistan_presence": true
+      },
+      "warranty": {
+        "observed_claim": null,
+        "confidence": "unknown"
+      },
+      "confidence": "moderate"
+    },
+    {
+      "product_id": "goodwe-gw6000-es-c10",
+      "pakistan_market": {
+        "availability": "listed by Pakistan retailers",
+        "observed_price_pkr": 205000,
+        "price_source_date": "2026-09",
+        "additional_observed_price_pkr": 240000,
+        "official_pakistan_presence": true,
+        "official_model_specific_pakistan_marketing": "not yet confirmed"
+      },
+      "warranty": {
+        "observed_claim": "5-year replacement warranty on one Pakistan retail listing",
+        "confidence": "moderate",
+        "official_regional_terms_required": true
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "itel-ipv-6k48u",
+      "pakistan_market": {
+        "availability": "Pakistan availability confirmed; exact current price snapshot pending",
+        "observed_price_pkr": null,
+        "official_pakistan_presence": true
+      },
+      "warranty": {
+        "observed_claim": "3-year replacement / 5-year service claims appear in retailer channels; model-specific official terms require confirmation",
+        "confidence": "moderate"
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "itel-ipv-6k48u-pro",
+      "pakistan_market": {
+        "availability": "widely listed/in stock",
+        "observed_price_pkr": 140000,
+        "price_source_date": "2026-09-05",
+        "additional_observed_prices_pkr": [142000,145000],
+        "official_pakistan_presence": true
+      },
+      "warranty": {
+        "observed_claim": "3-year replacement + 5-year service",
+        "confidence": "moderate",
+        "official_model_specific_terms_required": true
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "itel-ipv-6k248",
+      "pakistan_market": {
+        "availability": "Pakistan market relevance not yet sufficiently verified",
+        "observed_price_pkr": null,
+        "official_pakistan_presence": false
+      },
+      "warranty": {
+        "observed_claim": null,
+        "confidence": "unknown"
+      },
+      "confidence": "moderate"
+    },
+    {
+      "product_id": "itel-ihy-6k6l1c",
+      "pakistan_market": {
+        "availability": "Pakistan retail availability confirmed by current listings",
+        "observed_price_pkr": 198000,
+        "price_source_date": "2026-09-04",
+        "additional_observed_price_pkr": 229900,
+        "official_pakistan_presence": true,
+        "model_identity_note": "Retailers identify model as IHY-6K6L1C; official current itel Energy site names the family/product as Sparta IP66 H6.6K. Exact manufacturer model-document linkage should remain tracked."
+      },
+      "warranty": {
+        "observed_claim": "5-year replacement claim on Pakistan retail listing",
+        "confidence": "moderate",
+        "official_model_specific_terms_required": true
+      },
+      "confidence": "strong"
+    }
+  ]
+}
