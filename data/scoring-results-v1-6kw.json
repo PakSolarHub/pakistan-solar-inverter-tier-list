@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "status": "preliminary_scoring_snapshot",
+  "category": "6.0-<7.0 kW single-phase LV hybrid",
+  "note": "Scores are a first-pass research model, not final tier assignments. Unknowns are not automatically penalized as failures; evidence confidence and unresolved conflicts remain explicit.",
+  "weights": {
+    "electrical_pv": 0.18,
+    "battery": 0.15,
+    "backup_ups": 0.15,
+    "features": 0.10,
+    "thermal_protection": 0.10,
+    "reliability": 0.15,
+    "pakistan_support": 0.10,
+    "value": 0.07
+  },
+  "tier_bands": {"S":"90-100","A":"80-89.99","B":"70-79.99","C":"60-69.99","D":"50-59.99","E":"<50"},
+  "products": [
+    {"product_id":"goodwe-gw6000-es-c10","model":"GW6000-ES-C10","brand":"GoodWe","pillar_scores":{"electrical_pv":94,"battery":96,"backup_ups":94,"features":94,"thermal_protection":92,"reliability":84,"pakistan_support":84,"value":88},"weighted_score":91.2,"provisional_band":"S","confidence":"moderate","flags":["excellent PV/battery architecture","Pakistan warranty/availability evidence still needs normalization"]},
+    {"product_id":"solis-s6-eh1p6k-l-plus","model":"S6-EH1P6K-L-PLUS","brand":"Solis","pillar_scores":{"electrical_pv":90,"battery":90,"backup_ups":96,"features":94,"thermal_protection":94,"reliability":82,"pakistan_support":86,"value":82},"weighted_score":89.5,"provisional_band":"A","confidence":"moderate","flags":["excellent backup/features","MPPT-current variant conflict must remain visible"]},
+    {"product_id":"solis-s6-eh1p6k-l-pro","model":"S6-EH1P6K-L-PRO","brand":"Solis","pillar_scores":{"electrical_pv":91,"battery":92,"backup_ups":96,"features":92,"thermal_protection":92,"reliability":82,"pakistan_support":82,"value":68},"weighted_score":88.2,"provisional_band":"A","confidence":"moderate","flags":["strong technical package","current Pakistan price can materially change value score"]},
+    {"product_id":"itel-ihy-6k6l1c","model":"IHY-6K6L1C","brand":"itel","pillar_scores":{"electrical_pv":92,"battery":94,"backup_ups":94,"features":90,"thermal_protection":94,"reliability":70,"pakistan_support":82,"value":90},"weighted_score":88.2,"provisional_band":"A","confidence":"low-moderate","flags":["excellent paper architecture/value","reliability evidence is materially thinner than Solis/GoodWe","model/variant documentation conflicts remain"]},
+    {"product_id":"goodwe-gw6000-es-20","model":"GW6000-ES-20","brand":"GoodWe","pillar_scores":{"electrical_pv":84,"battery":88,"backup_ups":90,"features":86,"thermal_protection":84,"reliability":86,"pakistan_support":88,"value":78},"weighted_score":86.0,"provisional_band":"A","confidence":"moderate-high","flags":["mature ES G2 evidence base","16A MPPT current is less generous than C10"]},
+    {"product_id":"solis-s6-eh1p6k-l-eu","model":"S6-EH1P6K-L-EU","brand":"Solis","pillar_scores":{"electrical_pv":88,"battery":88,"backup_ups":90,"features":88,"thermal_protection":90,"reliability":82,"pakistan_support":82,"value":72},"weighted_score":85.9,"provisional_band":"A","confidence":"moderate","flags":["strong technical design","Pakistan-specific support/price evidence needs exact model verification"]},
+    {"product_id":"itel-ipv-6k48u-pro","model":"IPV-6K48U Pro","brand":"itel","pillar_scores":{"electrical_pv":76,"battery":78,"backup_ups":88,"features":84,"thermal_protection":78,"reliability":72,"pakistan_support":80,"value":96},"weighted_score":80.3,"provisional_band":"A","confidence":"low-moderate","flags":["very strong price/value","single MPPT","official exact current datasheet evidence weaker than Solis/GoodWe"]},
+    {"product_id":"goodwe-gw6000m-es-20","model":"GW6000M-ES-20","brand":"GoodWe","pillar_scores":{"electrical_pv":68,"battery":60,"backup_ups":88,"features":82,"thermal_protection":84,"reliability":86,"pakistan_support":88,"value":76},"weighted_score":78.1,"provisional_band":"B","confidence":"moderate","flags":["60A charge/discharge architecture materially limits storage power despite 6kW AC rating"]},
+    {"product_id":"itel-ipv-6k48u","model":"IPV-6K48U","brand":"itel","pillar_scores":{"electrical_pv":72,"battery":75,"backup_ups":88,"features":84,"thermal_protection":78,"reliability":70,"pakistan_support":78,"value":94},"weighted_score":78.5,"provisional_band":"B","confidence":"low-moderate","flags":["single MPPT","excellent budget positioning","real-world reliability evidence limited"]},
+    {"product_id":"solis-s5-eh1p6k-l","model":"S5-EH1P6K-L","brand":"Solis","pillar_scores":{"electrical_pv":78,"battery":78,"backup_ups":78,"features":75,"thermal_protection":82,"reliability":80,"pakistan_support":80,"value":78},"weighted_score":78.6,"provisional_band":"B","confidence":"moderate","flags":["older architecture","5kW battery charge/discharge and backup despite 6kW grid rating"]},
+    {"product_id":"itel-ipv-6k248","model":"IPV-6K248","brand":"itel","pillar_scores":{"electrical_pv":65,"battery":70,"backup_ups":78,"features":65,"thermal_protection":70,"reliability":65,"pakistan_support":65,"value":90},"weighted_score":70.0,"provisional_band":"B","confidence":"low","flags":["older/different architecture","important PV/MPPT details remain incomplete","should not receive a confident final tier yet"]}
+  ]
+}
