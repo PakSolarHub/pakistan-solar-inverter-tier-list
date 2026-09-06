@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "category": "6kw-class",
+  "scope": "Solis, GoodWe, itel; 6.0 to <7.0 kW single-phase LV hybrid",
+  "confidence_policy": "Only explicitly supported features are marked verified; unresolved model-specific claims remain unknown or conflicting.",
+  "records": [
+    {
+      "product_id": "solis-s6-eh1p6k-l-eu",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "supported",
+        "three_phase_system": "supported",
+        "ac_coupling": "supported",
+        "peak_shaving": "supported",
+        "time_of_use_scheduling": "supported",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "supported",
+        "battery_bms": "CAN/RS485; exact approved battery list to verify"
+      },
+      "confidence": "strong",
+      "notes": ["Exact model-specific feature documentation should be retained separately from series-level claims."]
+    },
+    {
+      "product_id": "solis-s6-eh1p6k-l-pro",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "supported",
+        "three_phase_system": "supported",
+        "ac_coupling": "supported",
+        "peak_shaving": "supported",
+        "time_of_use_scheduling": "supported",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "supported",
+        "battery_bms": "CAN/RS485; exact approved battery list to verify"
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "solis-s6-eh1p6k-l-plus",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "up to 6; 1-phase/3-phase system capable",
+        "three_phase_system": "supported",
+        "ac_coupling": "supported",
+        "peak_shaving": "supported",
+        "time_of_use_scheduling": "6 custom schedules",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "supported; <=4ms in referenced 6K documentation",
+        "battery_bms": "CAN/RS485; exact approved battery list to verify"
+      },
+      "confidence": "verified_for_recorded_features"
+    },
+    {
+      "product_id": "solis-s5-eh1p6k-l",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "supported; exact 6K limit to verify",
+        "three_phase_system": "supported; exact configuration to verify",
+        "ac_coupling": "unknown",
+        "peak_shaving": "supported",
+        "time_of_use_scheduling": "supported",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "supported",
+        "battery_bms": "CAN; exact approved battery list to verify"
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "goodwe-gw6000-es-20",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "up to 3 in one phase",
+        "three_phase_system": "supported by ES G2 series; exact GW6000 configuration to verify",
+        "ac_coupling": "unknown",
+        "peak_shaving": "supported",
+        "time_of_use_scheduling": "supported; exact mode list to verify",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "<10ms",
+        "battery_bms": "CAN; wide range of LV batteries supported"
+      },
+      "confidence": "verified_for_series_features"
+    },
+    {
+      "product_id": "goodwe-gw6000m-es-20",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "up to 3 in one phase",
+        "three_phase_system": "supported by ES G2 series; exact GW6000M configuration to verify",
+        "ac_coupling": "unknown",
+        "peak_shaving": "supported",
+        "time_of_use_scheduling": "supported; exact mode list to verify",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "<10ms",
+        "battery_bms": "CAN; wide range of LV batteries supported"
+      },
+      "confidence": "verified_for_series_features"
+    },
+    {
+      "product_id": "goodwe-gw6000-es-c10",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "supported; exact 6K configuration to verify",
+        "three_phase_system": "unknown",
+        "ac_coupling": "unknown",
+        "peak_shaving": "supported",
+        "time_of_use_scheduling": "supported; exact mode list to verify",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "supported",
+        "battery_bms": "CAN; official battery compatibility list required"
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "itel-ipv-6k48u",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "up to 12; exact phase configuration to verify",
+        "three_phase_system": "unknown",
+        "ac_coupling": "unknown",
+        "peak_shaving": "unknown",
+        "time_of_use_scheduling": "supported; exact implementation to verify",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "supported",
+        "battery_bms": "RS485/CAN capability reported; exact protocol and approved batteries to verify"
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "itel-ipv-6k48u-pro",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "up to 12",
+        "three_phase_system": "unknown",
+        "ac_coupling": "unknown",
+        "peak_shaving": "unknown",
+        "time_of_use_scheduling": "supported; exact implementation to verify",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "10ms",
+        "battery_bms": "RS485 BMS; exact protocol and approved batteries to verify"
+      },
+      "confidence": "strong"
+    },
+    {
+      "product_id": "itel-ipv-6k248",
+      "functional": {
+        "zero_export": "supported/reported; exact implementation to verify",
+        "generator_support": "supported",
+        "smart_load": "supported via second load output",
+        "parallel": "unknown",
+        "three_phase_system": "unknown",
+        "ac_coupling": "unknown",
+        "peak_shaving": "unknown",
+        "time_of_use_scheduling": "unknown",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "supported",
+        "battery_bms": "unknown"
+      },
+      "confidence": "moderate"
+    },
+    {
+      "product_id": "itel-ihy-6k6l1c",
+      "functional": {
+        "zero_export": "supported",
+        "generator_support": "supported",
+        "smart_load": "supported",
+        "parallel": "supported; exact limit/version to verify",
+        "three_phase_system": "supported/reported; exact configuration to verify",
+        "ac_coupling": "unknown",
+        "peak_shaving": "supported/reported; exact documentation to verify",
+        "time_of_use_scheduling": "supported/reported; exact implementation to verify",
+        "pv_only_off_grid": "supported",
+        "ups_backup": "supported; 10ms UPS / 20ms appliance claim",
+        "battery_bms": "CAN/RS485; exact approved battery list to verify"
+      },
+      "confidence": "strong"
+    }
+  ]
+}
