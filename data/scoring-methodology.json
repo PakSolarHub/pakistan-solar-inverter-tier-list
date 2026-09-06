@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "status": "methodology_only_no_product_scores_yet",
+  "scope": {
+    "category": "6.0-<7.0 kW single-phase low-voltage hybrid",
+    "market": "Pakistan",
+    "version": "V1"
+  },
+  "principles": [
+    "Evidence before opinion",
+    "Do not reward an unsupported specification",
+    "Separate technical capability from reliability evidence and Pakistan after-sales support",
+    "Do not treat anecdotes as failure rates",
+    "Keep conflicting source values instead of silently selecting a convenient value",
+    "Price affects value, not technical quality",
+    "Missing data reduces confidence but does not automatically mean the product is bad",
+    "Final tiers are derived from the score and evidence confidence, not assigned manually"
+  ],
+  "score_scale": {
+    "maximum": 100,
+    "minimum": 0,
+    "method": "weighted pillar average"
+  },
+  "pillars": [
+    {
+      "id": "electrical_pv",
+      "name": "Electrical & PV architecture",
+      "weight_percent": 18,
+      "criteria": [
+        "rated AC output suitability",
+        "PV oversizing capability",
+        "MPPT count and independence",
+        "MPPT voltage operating window",
+        "PV input current capability",
+        "efficiency",
+        "grid voltage/frequency flexibility"
+      ]
+    },
+    {
+      "id": "battery",
+      "name": "Battery capability & compatibility",
+      "weight_percent": 15,
+      "criteria": [
+        "maximum charge/discharge current",
+        "charge/discharge power",
+        "battery voltage operating range",
+        "supported battery chemistries",
+        "BMS communications",
+        "documented battery compatibility",
+        "usable battery configuration flexibility"
+      ]
+    },
+    {
+      "id": "backup",
+      "name": "Backup / UPS performance",
+      "weight_percent": 15,
+      "criteria": [
+        "rated backup power",
+        "backup surge/overload capability",
+        "transfer time",
+        "backup voltage quality",
+        "motor/load starting capability",
+        "whole-home/essential-load flexibility"
+      ]
+    },
+    {
+      "id": "features",
+      "name": "Features & system flexibility",
+      "weight_percent": 10,
+      "criteria": [
+        "zero export/export control",
+        "generator support",
+        "smart load",
+        "AC coupling",
+        "parallel operation",
+        "three-phase system capability where supported",
+        "peak shaving",
+        "TOU/custom charge-discharge scheduling",
+        "remote monitoring and controls",
+        "firmware/update capability"
+      ]
+    },
+    {
+      "id": "thermal_protection",
+      "name": "Thermal, environmental & protection design",
+      "weight_percent": 10,
+      "criteria": [
+        "operating temperature",
+        "temperature derating behaviour",
+        "IP rating",
+        "cooling architecture",
+        "surge protection",
+        "AFCI/ground/residual-current protection",
+        "altitude capability"
+      ]
+    },
+    {
+      "id": "reliability",
+      "name": "Reliability & real-world evidence",
+      "weight_percent": 15,
+      "criteria": [
+        "independent owner reports",
+        "installer reports",
+        "recurring fault patterns",
+        "thermal/failure patterns",
+        "battery communication issues",
+        "firmware/app problems",
+        "warranty claim outcomes",
+        "length and quality of field history"
+      ],
+      "important_rule": "No statistical failure rate will be inferred from a small number of anecdotes. Evidence strength is scored separately from the direction of the report."
+    },
+    {
+      "id": "pakistan_support",
+      "name": "Pakistan support & ownership risk",
+      "weight_percent": 10,
+      "criteria": [
+        "official Pakistan presence",
+        "authorized importer/distributor clarity",
+        "service-center coverage",
+        "warranty duration",
+        "replacement versus repair policy",
+        "warranty claim turnaround evidence",
+        "spare-parts availability",
+        "installer familiarity",
+        "local technical support"
+      ]
+    },
+    {
+      "id": "value",
+      "name": "Pakistan value",
+      "weight_percent": 7,
+      "criteria": [
+        "observed street price",
+        "price per kW",
+        "capability relative to price",
+        "warranty/support relative to price"
+      ],
+      "important_rule": "Value is deliberately limited to 7% so a very cheap inverter cannot outrank a substantially better inverter merely because it is inexpensive."
+    }
+  ],
+  "evidence_scoring": {
+    "verified": 1.0,
+    "strong": 0.9,
+    "moderate": 0.75,
+    "weak": 0.5,
+    "community_reported": 0.5,
+    "conflicting": 0.5,
+    "not_specified": 0.4,
+    "unknown": 0.4,
+    "rule": "Evidence confidence modifies the criterion contribution; it does not convert unknown into a negative technical claim."
+  },
+  "criterion_band": {
+    "method": "Each criterion receives 0-100 before pillar weighting.",
+    "bands": {
+      "90-100": "exceptional",
+      "80-89": "very_good",
+      "70-79": "good",
+      "60-69": "acceptable",
+      "40-59": "weak_or_limited",
+      "0-39": "poor"
+    }
+  },
+  "missing_data_policy": {
+    "manufacturer_does_not_publish": "Do not assume the value is poor. Score conservatively and reduce evidence confidence.",
+    "conflicting_sources": "Retain all credible values and score using the stronger source while applying a conflict confidence penalty.",
+    "retailer_only_claim": "Do not treat as verified manufacturer specification.",
+    "community_claim": "Useful for real-world evidence only; never convert directly into a statistical failure rate."
+  },
+  "reliability_evidence_ladder": [
+    "manufacturer-confirmed field issue or service bulletin",
+    "multiple independent installer reports describing the same issue",
+    "multiple independent owner reports with consistent symptoms",
+    "single detailed owner report",
+    "single vague complaint",
+    "marketing/community reputation without concrete evidence"
+  ],
+  "tier_mapping": {
+    "method": "Applied only after all candidate scores and evidence-confidence values are calculated.",
+    "proposed_bands": {
+      "S": "90-100",
+      "A": "80-89.99",
+      "B": "70-79.99",
+      "C": "60-69.99",
+      "D": "50-59.99",
+      "E": "0-49.99"
+    },
+    "confidence_gate": "A product with a high numerical score but materially weak evidence may be marked provisional rather than presented as a fully established tier result.",
+    "unrated_rule": "A product remains UNRATED if the minimum evidence threshold has not been met, regardless of provisional technical score."
+  },
+  "anti_gaming_rules": [
+    "MPPT count is not an automatic tier criterion; its importance is reflected in the electrical/PV pillar.",
+    "Nominal AC wattage does not dominate the score because all candidates already belong to the same 6 kW class.",
+    "Price cannot compensate for severe reliability or safety concerns.",
+    "Brand reputation alone cannot determine the score.",
+    "Anecdotal complaints cannot establish a failure rate.",
+    "A manufacturer warranty duration alone cannot prove good after-sales service.",
+    "OEM/rebrand identity does not transfer reliability scores between products without evidence."
+  ],
+  "calculation": {
+    "formula": "overall_score = sum(pillar_score * pillar_weight) / 100",
+    "rounding": "Keep internal calculation to at least 2 decimal places; display one decimal place.",
+    "price_snapshot": "Use observed Pakistan street price with date and source; do not use MSRP when street price evidence exists."
+  },
+  "methodology_reference": {
+    "note": "The structure is informed by evidence-first inverter scoring approaches that separately evaluate efficiency, design/flexibility, thermal resilience and features, while adapting the weighting to Pakistan-specific warranty, service and price realities.",
+    "external_reference": "review.solar methodology, September 2026"
+  }
+}
