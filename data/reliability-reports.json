@@ -1,4 +1,163 @@
 {
   "schema_version": "1.0",
-  "records": []
+  "methodology": {
+    "note": "These records are evidence observations, not calculated failure rates. Owner anecdotes are separated from manufacturer/service evidence and recurring patterns are not inferred from isolated reports.",
+    "confidence_levels": ["verified", "strong", "moderate", "weak", "community_reported", "conflicting", "unknown"]
+  },
+  "records": [
+    {
+      "evidence_id": "rel-solis-pakistan-support-2026-01",
+      "product_ids": ["solis-s6-eh1p6k-l-plus", "solis-s6-eh1p6k-l-pro", "solis-s6-eh1p6k-l-eu", "solis-s5-eh1p6k-l"],
+      "brand": "Solis",
+      "category": "after_sales",
+      "claim": "Solis publishes dedicated Pakistan technical support contacts including a hotline, WhatsApp number and Pakistan fast-service email.",
+      "evidence_type": "manufacturer_service_page",
+      "confidence": "verified",
+      "source_url": "https://www.solisinverters.com/pk/service",
+      "observation_date": "2026-09-06"
+    },
+    {
+      "evidence_id": "rel-solis-pakistan-complaint-2026-01",
+      "product_ids": ["solis-s6-eh1p6k-l-plus", "solis-s6-eh1p6k-l-pro", "solis-s6-eh1p6k-l-eu", "solis-s5-eh1p6k-l"],
+      "brand": "Solis",
+      "category": "after_sales",
+      "claim": "A Pakistan-based installer publicly reported severe difficulty reaching Solis technical support in June 2026, including a long helpline wait and an unsatisfactory interaction. This is a single installer report and is not evidence of a general service failure rate.",
+      "evidence_type": "installer_public_review",
+      "confidence": "community_reported",
+      "source_url": "https://www.trustpilot.com/review/www.solisinverters.com",
+      "observation_date": "2026-06-09"
+    },
+    {
+      "evidence_id": "rel-solis-pakistan-warranty-delay-2025-01",
+      "product_ids": ["solis-s6-eh1p6k-l-plus", "solis-s6-eh1p6k-l-pro"],
+      "brand": "Solis",
+      "category": "warranty",
+      "claim": "A public LinkedIn comment from Pakistan reported that an S6-EH1P8K-L-PRO unit submitted to an authorized service center in March 2025 had reportedly remained unresolved for almost two months. This is a single reported case and the exact resolution was not independently verified.",
+      "evidence_type": "owner_public_report",
+      "confidence": "community_reported",
+      "source_url": "https://www.linkedin.com/posts/ginlongsolis_solis-solisbrandpower-bloombergnef-activity-7300423585758687232-AxFX",
+      "observation_date": "2025-05-01"
+    },
+    {
+      "evidence_id": "rel-solis-global-warranty-process-2026-01",
+      "product_ids": ["solis-s6-eh1p6k-l-plus", "solis-s6-eh1p6k-l-pro", "solis-s6-eh1p6k-l-eu", "solis-s5-eh1p6k-l"],
+      "brand": "Solis",
+      "category": "warranty_process",
+      "claim": "Solis's August 2026 warranty procedure directs system owners to report faults through the installer and requires model, serial number/plant ID, commissioning date, fault description and failure date for warranty handling.",
+      "evidence_type": "manufacturer_warranty_procedure",
+      "confidence": "verified",
+      "source_url": "https://solis-service.solisinverters.com/en/support/solutions/articles/44002820944-solis-warranty-replacement-procedure",
+      "observation_date": "2026-09-06"
+    },
+    {
+      "evidence_id": "rel-goodwe-owner-mixed-2025-2026-01",
+      "product_ids": ["goodwe-gw6000-es-20", "goodwe-gw6000m-es-20", "goodwe-gw6000-es-c10"],
+      "brand": "GoodWe",
+      "category": "reliability_warranty",
+      "claim": "Pakistani community reports include a user running a GoodWe 6kW hybrid for almost two years without problems and another user reporting a failure around the second year followed by company replacement in roughly 3–4 days. These are individual owner reports and cannot be converted into a failure rate.",
+      "evidence_type": "owner_reports",
+      "confidence": "community_reported",
+      "source_url": "https://www.reddit.com/r/SolarPakistan/comments/1n36u1z/goodwe_solar_inverters_in_pakistan/",
+      "observation_date": "2025-08-29"
+    },
+    {
+      "evidence_id": "rel-goodwe-warranty-delay-2026-01",
+      "product_ids": ["goodwe-gw6000-es-20", "goodwe-gw6000m-es-20", "goodwe-gw6000-es-c10"],
+      "brand": "GoodWe",
+      "category": "after_sales",
+      "claim": "A Pakistan Reddit user reported a warranty case pending since August 2025 and described the advertised 24–48 hour response as inaccurate in their experience. This is an individual report and conflicts with positive reports of faster replacement.",
+      "evidence_type": "owner_public_report",
+      "confidence": "community_reported",
+      "source_url": "https://www.reddit.com/r/SolarPakistan/comments/1n36u1z/goodwe_solar_inverters_in_pakistan/",
+      "observation_date": "2026-02-19"
+    },
+    {
+      "evidence_id": "rel-goodwe-service-response-2026-01",
+      "product_ids": ["goodwe-gw6000-es-20", "goodwe-gw6000m-es-20", "goodwe-gw6000-es-c10"],
+      "brand": "GoodWe",
+      "category": "after_sales",
+      "claim": "GoodWe's warranty/support pages state that its service team responds to warranty enquiries within 48 hours. This is a response-time commitment, not proof that physical replacement occurs within 48 hours in Pakistan.",
+      "evidence_type": "manufacturer_warranty_page",
+      "confidence": "verified",
+      "source_url": "https://en.goodwe.com/warranty",
+      "observation_date": "2026-09-06"
+    },
+    {
+      "evidence_id": "rel-goodwe-thermal-owner-report-2026-01",
+      "product_ids": ["goodwe-gw6000-es-20"],
+      "brand": "GoodWe",
+      "category": "thermal",
+      "claim": "A Pakistan user reported that a GW6000-ES-20 in Multan thermal-throttled around a 50 °C chamber temperature, with a reported heatsink temperature around 75 °C. This is an individual field report, not a manufacturer-confirmed thermal limit or failure pattern.",
+      "evidence_type": "owner_report",
+      "confidence": "community_reported",
+      "source_url": "https://www.reddit.com/r/SolarPakistan/comments/1v4tsfa/inverex_solis_or_goodwe/",
+      "observation_date": "2026-07-24"
+    },
+    {
+      "evidence_id": "rel-goodwe-noise-owner-report-2026-01",
+      "product_ids": ["goodwe-gw6000-es-20"],
+      "brand": "GoodWe",
+      "category": "acoustics",
+      "claim": "A July 2026 owner reported substantially higher-than-expected measured noise from a GW6000-ES-20 despite the unit being specified as fanless. This may represent installation/environmental or unit-specific behaviour; no general defect conclusion is drawn.",
+      "evidence_type": "owner_report",
+      "confidence": "community_reported",
+      "source_url": "https://nergiza.com/foro/threads/ruido-inversor-goodwe-6kw.17002/",
+      "observation_date": "2026-07-25"
+    },
+    {
+      "evidence_id": "rel-itel-community-quality-2026-01",
+      "product_ids": ["itel-ipv-6k48u", "itel-ipv-6k48u-pro", "itel-ipv-6k248", "itel-ihy-6k6l1c"],
+      "brand": "itel",
+      "category": "community_perception",
+      "claim": "Recent Pakistan community discussion generally places itel as a budget/entry-level option versus Solis and GoodWe, with repeated comments about louder cooling and perceived differences in build/protection/software. These are opinions and engineering assertions from community members, not measured failure-rate evidence.",
+      "evidence_type": "community_discussion",
+      "confidence": "community_reported",
+      "source_url": "https://www.reddit.com/r/SolarPakistan/comments/1v4tsfa/itel_inverter_vs_solisgoodwe_inverter/",
+      "observation_date": "2026-08-24"
+    },
+    {
+      "evidence_id": "rel-itel-6kw-owner-2026-01",
+      "product_ids": ["itel-ipv-6k48u", "itel-ipv-6k48u-pro"],
+      "brand": "itel",
+      "category": "self_consumption",
+      "claim": "A Pakistan owner who had recently installed an itel 6kW inverter reported concern that the inverter appeared to consume roughly 10 units/day. Community replies suggested the actual inverter/self-consumption component was more likely around 1–3 units/day and that grid-import accounting also includes system losses. The report does not establish a fault.",
+      "evidence_type": "owner_discussion",
+      "confidence": "community_reported",
+      "source_url": "https://www.reddit.com/r/SolarPakistan/comments/1v429ct/need_help_regarding_itel_inverter/",
+      "observation_date": "2026-07-23"
+    },
+    {
+      "evidence_id": "rel-itel-bms-report-2026-01",
+      "product_ids": ["itel-ipv-6k48u", "itel-ipv-6k48u-pro"],
+      "brand": "itel",
+      "category": "battery_communication",
+      "claim": "A Pakistan user reported soft over-charge warnings from a Daly BMS when using an itel inverter, including when BMS communication was active. The discussion involved a 3.6kW itel model rather than the 6kW candidates, so it should be treated as brand/family-level evidence only and not as proof of a 6kW defect.",
+      "evidence_type": "owner_report",
+      "confidence": "community_reported",
+      "source_url": "https://www.reddit.com/r/SolarPakistan/comments/1ua0bcl/itel_36_kw_inverter_charging_problem/",
+      "observation_date": "2026-06-19"
+    },
+    {
+      "evidence_id": "rel-itel-service-center-hyderabad-2026-01",
+      "product_ids": ["itel-ipv-6k48u", "itel-ipv-6k48u-pro", "itel-ipv-6k248", "itel-ihy-6k6l1c"],
+      "brand": "itel",
+      "category": "after_sales",
+      "claim": "itel Energy publicly announced an after-sales service center in Hyderabad, Pakistan in April 2026, describing inverter diagnostics, technical support and servicing. The announcement states 3-year replacement warranty for IP54 series and 5-year replacement warranty for IP66 series.",
+      "evidence_type": "manufacturer_video_announcement",
+      "confidence": "strong",
+      "source_url": "https://www.youtube.com/watch?v=EBCwB9YuZco",
+      "observation_date": "2026-04-24"
+    },
+    {
+      "evidence_id": "rel-itel-warranty-policy-2026-01",
+      "product_ids": ["itel-ipv-6k48u", "itel-ipv-6k48u-pro", "itel-ipv-6k248", "itel-ihy-6k6l1c"],
+      "brand": "itel",
+      "category": "warranty",
+      "claim": "itel Pakistan's published warranty policy states that quality-related defects on products sold directly by itel or authorized resellers are covered, with warranty limited to the country of purchase and subject to the policy's exclusions.",
+      "evidence_type": "manufacturer_or_brand_warranty_page",
+      "confidence": "verified",
+      "source_url": "https://itel-pk.com/pages/warranty-policy",
+      "observation_date": "2026-09-06"
+    }
+  ]
 }
